@@ -1,0 +1,30 @@
+#Dashboard{
+  width:75vw;
+  height: 80vh;
+  text-align: center;
+}
+
+#welcome{
+  height: 30px;
+  width:30px;
+}
+
+
+#DashInfor{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 82vw;
+  border-radius: 7px;
+  box-shadow: 0px 1px 5px 0px grey;
+}
+
+#DashInfor div{
+  margin:40px;
+}
+
+button{
+  width:500px;
+}

@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import  sqlite3 from 'sqlite3';
 import {Link,useHistory} from 'react-router-dom';
+import {CheckUser} from './DBservices';
 import './Login.css';
 import Logo from '../../../assets/doctor.png';
 import back from '../../../assets/DLogin.jpg';
@@ -16,10 +17,7 @@ const history = useHistory();
   setEsc('red');
   setError('Fill in the required fields');
  }else{
-  setBgp('white');
-  setEsc('#00aeff');
-  setError(`Welcome ${user}`);
-  history.push('/Main');
+  history.push("/Main");
  }
  
  }

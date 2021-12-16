@@ -9,9 +9,17 @@
     "url": "https://github.com/electron-react-boilerplate"
   },
   "scripts": {
+    "rebuild-sqlite3": "electron-rebuild -f -w sqlite3",
     "electron-rebuild": "node -r ts-node/register ../../.erb/scripts/electron-rebuild.js",
     "link-modules": "node -r ts-node/register ../../.erb/scripts/link-modules.ts",
     "postinstall": "npm run electron-rebuild && npm run link-modules"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "nedb": "^1.8.0",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^3.2.5"
+  }
 }
